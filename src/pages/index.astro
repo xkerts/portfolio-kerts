@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+//ICONS
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/Github.astro";
+import MailIcon from "../components/icons/Email.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import Code from "../components/icons/Code.astro";
+import Rocket from "../components/icons/Rocket.astro";
+import JS from "../components/icons/Javascript.astro";
+import TS from "../components/icons/Typescript.astro";
+import Node from "../components/icons/Node.astro";
+import Express from "../components/icons/Express.astro";
+import Nest from "../components/icons/Nest.astro";
+import Vue from "../components/icons/Vue.astro";
+import React from "../components/icons/React.astro";
+import Next from "../components/icons/Next.astro";
+//COMPONENTS
+import SocialPill from "../components/SocialPill.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Projects from "../components/Projects.astro";
+import Skill from "../components/Skill.astro";
+---
+
+<Layout title="Kerts' Portfolio - Software Engineer">
+  <main class="px-4">
+    <SectionContainer id="home" class="py-44">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="https://media.licdn.com/dms/image/C4D03AQHwM8HDnbf5eQ/profile-displayphoto-shrink_200_200/0/1668094920315?e=2147483647&v=beta&t=KDi4SoGmC-FjAOq1LOo3nRowD6yXk5mTaSiLiNnnLW8"
+        alt="Kerts' pic"
+      />
+      <h1 class="text-white text-2xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hey, I'm Kerts
+        <a
+          href="https://www.linkedin.com/in/kevin-paz-obando/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center"
+        >
+          <Badge>Open to Work</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl opacity-90 text-wrap text-white">
+        <span class="text-blue-300">Software Engineer</span> with +3 years of experience, from Guayaquil, Ecuador.
+      </h2>
+      <nav class="flex gap-4 mt-4 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/kevin-paz-obando/">
+          <LinkedInIcon class="size-4 lg:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/xkerts">
+          <GitHubIcon class="size-4 lg:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:xkerts@outlook.com">
+          <MailIcon class="size-4 lg:size-6" />
+          xkerts@outlook.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+    <SectionContainer id="skills" class="py-32">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white">
+        <Rocket class="size-6" />
+        Skills
+      </h2>
+      <nav class="flex gap-3 mt-4 flex-wrap ml-3">
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <JS class="size-6 lg:size-8" />
+          JavaScript
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <TS class="size-6 lg:size-8" />
+          TypeScript
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <Node class="size-6 lg:size-8" />
+          NodeJS
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <Express class="size-6 lg:size-8" />
+          ExpressJS
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <Nest class="size-6 lg:size-8" />
+          NestJS
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <Vue class="size-6 lg:size-8" />
+          VueJS
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <React class="size-6 lg:size-8" />
+          ReactJS
+        </Skill>
+        <Skill class="flex flex-col items-center justify-between h-20 w-20 gap-1 text-[#FFFFFF]">
+          <Next class="size-6 lg:size-8" />
+          NextJS
+        </Skill>
+      </nav>
+    </SectionContainer>
+    <SectionContainer id="experience" class="py-32">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white">
+        <Briefcase class="size-6" />
+        Work Experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer id="projects" class="py-32">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center text-white">
+        <Code class="size-6" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>

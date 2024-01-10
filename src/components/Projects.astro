@@ -1,0 +1,80 @@
+---
+//Icons
+import NextJS from "./icons/Next.astro";
+import React from "./icons/React.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Nest from "./icons/Nest.astro";
+import Vue from "./icons/Vue.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  NEST: {
+    name: "Nest.js",
+    class: "bg-black text-white",
+    icon: Nest,
+  },
+  VUE: {
+    name: "Vue.js",
+    class: "bg-black text-white",
+    icon: Vue,
+  },
+  REACT: {
+    name: "Reactjs",
+    class: "bg-black text-white",
+    icon: React,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+};
+const PROJECTS = [
+  {
+    title: "Frenemies - Card drinking game",
+    description: "Created from scratch with React and Tailwind CSS. It's a card game for friends.",
+    link: "#",
+    github: "#",
+    image: "/projects/frenemies.jpg",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+  {
+    title: "EZ Expenses - Reimbursement App",
+    description:
+      "Created from scratch using NestJs, React and Tailwind. It's a reimbursement app that allows users to register expenses.",
+    link: "#",
+    github: "#",
+    image: "/projects/frenemies.jpg",
+    tags: [TAGS.NEST, TAGS.REACT, TAGS.TAILWIND],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags }) => (
+    <article class="ml-3 py-5">
+      <h3 class="text-2xl font-semibold text-blue-300 dark:text-yellow-200 mb-2">{title}</h3>
+      <p class="text-white ext-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex gap-x-2 flex-row mb-2">
+        {tags.map((tag) => (
+          <li>
+            <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10`}>
+              <tag.icon class="size-4" />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        loading="lazy"
+        class="rounded shadow-2xl shadow-white/10"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+}

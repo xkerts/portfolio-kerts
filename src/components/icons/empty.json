@@ -1,0 +1,56 @@
+{
+  "numeroDespacho": "10001",
+  "codigoUnico": "34-231227-1910",
+  "placa": "rbk-154",
+  "ordenInterna": "1718",
+  "formato": 5,
+  "volumenBFT": 9473,
+  "volumenM3": 9473,
+  "fechaDespacho": "2023-12-27T12:40:24.000Z",
+  "fechaTumba": "2023-12-20T00:00:00.000Z",
+  "plantaVendor": "4000",
+  "guiaRemision": "27863",
+  "po": "45100677",
+  "valorTransporte": 0,
+  "vendorAserrador": "60528",
+  "costoBFT": 0,
+  "material": "GREENLUMBERC",
+  "items": [
+    {
+      "palletId": "34-FC06L1-2023.12.27.18:48:45-1",
+      "palletIdVisual": "34-FC06L1-845-1",
+      "largo": 4,
+      "espesor": "2",
+      "ancho": 52,
+      "numeroPlantilla": 30,
+      "volumen": 32
+    },
+    {
+      "palletId": "34-FC06L1-2023.12.27.18:49:09-2",
+      "palletIdVisual": "34-FC06L1-909-2",
+      "largo": 4,
+      "espesor": "1 1/2",
+      "ancho": 52,
+      "numeroPlantilla": 125,
+      "volumen": 24
+    },
+    {
+      "palletId": "34-FC06L1-2023.12.27.18:49:35-3",
+      "palletIdVisual": "34-FC06L1-935-3",
+      "largo": 4,
+      "espesor": "1",
+      "ancho": 52,
+      "numeroPlantilla": 199,
+      "volumen": 16
+    },
+    {
+      "palletId": "34-FC06L1-2023.12.27.18:49:53-4",
+      "palletIdVisual": "34-FC06L1-953-4",
+      "largo": 4,
+      "espesor": "7/8",
+      "ancho": 52,
+      "numeroPlantilla": 169,
+      "volumen": 14
+    }
+  ]
+}
