@@ -34,7 +34,10 @@ const { description, title } = Astro.props;
   :root {
     color-scheme: light dark;
   }
-
+  ::selection {
+    color: white;
+    background: #a4cafec0;
+  }
   html {
     font-family: "Onest Variable", system-ui, sans-serif;
     scroll-behavior: smooth;

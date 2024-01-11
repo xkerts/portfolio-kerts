@@ -6,6 +6,7 @@ import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/Github.astro";
 import MailIcon from "../components/icons/Email.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
+import PDF from "../components/icons/PDF.astro";
 import Code from "../components/icons/Code.astro";
 import Rocket from "../components/icons/Rocket.astro";
 import JS from "../components/icons/Javascript.astro";
@@ -28,7 +29,7 @@ import Skill from "../components/Skill.astro";
   <main class="px-4">
     <SectionContainer id="home" class="py-44">
       <img
-        class="rounded-full size-12 mb-4"
+        class="rounded-lg h-20 w-20 mb-4"
         src="https://media.licdn.com/dms/image/C4D03AQHwM8HDnbf5eQ/profile-displayphoto-shrink_200_200/0/1668094920315?e=2147483647&v=beta&t=KDi4SoGmC-FjAOq1LOo3nRowD6yXk5mTaSiLiNnnLW8"
         alt="Kerts' pic"
       />
@@ -51,13 +52,17 @@ import Skill from "../components/Skill.astro";
           <LinkedInIcon class="size-4 lg:size-6" />
           LinkedIn
         </SocialPill>
+        <SocialPill href="mailto:xkerts@outlook.com">
+          <MailIcon class="size-3 lg:size-6" />
+          xkerts@outlook.com
+        </SocialPill>
         <SocialPill href="https://github.com/xkerts">
           <GitHubIcon class="size-4 lg:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="mailto:xkerts@outlook.com">
-          <MailIcon class="size-4 lg:size-6" />
-          xkerts@outlook.com
+        <SocialPill href="https://drive.google.com/file/d/1uhLKnzjc45cZAzr2JMYcj9lG0jSbpFJS/view?usp=sharing">
+          <PDF class="size-4 lg:size-6" />
+          Check my CV
         </SocialPill>
       </nav>
     </SectionContainer>
